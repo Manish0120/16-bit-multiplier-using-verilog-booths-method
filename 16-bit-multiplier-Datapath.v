@@ -40,7 +40,7 @@ module dff (d, q ,clk, clr);
   output reg q;
   
   always @ (posedge clk)
-    if (clk) q <= 0;
+    if (clr) q <= 0;
     else q <= d;
 endmodule
 
